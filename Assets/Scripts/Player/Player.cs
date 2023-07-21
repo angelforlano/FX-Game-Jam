@@ -14,8 +14,8 @@ public class Player : MonoBehaviour
 	
 	public AudioSource sfx;
 	public GameObject robot_p1;
-	public GameObject robot_p2;
-	public GameObject robot_p3;
+	//public GameObject robot_p2;
+	//public GameObject robot_p3;
 
     [Header("Controller Variables")]
 	[Range(0, 200)] public float hp;
@@ -241,13 +241,13 @@ public class Player : MonoBehaviour
 		if (part_id == "B")
 		{
 			part_b_done = true;
-			robot_p2.SetActive(true);
+			//robot_p2.SetActive(true);
 		}
 
 		if (part_id == "C")
 		{
 			part_c_done = true;
-			robot_p3.SetActive(true);
+			//robot_p3.SetActive(true);
 		}
 
 		if (part_a_done && part_b_done && part_c_done)
